@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background: white;
+    position: sticky;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url(../images/contact.jpg);
+}
+
+
+
+.contact-info{               
+    
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 50;
+    max-width: 1200px;
+    padding: 0 20px;
+    
+}
+
+.card{
+    background: invisible;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    
+}
+
+.card-icon{
+    font-size: 28px;
+    background:rgb(219, 22, 22);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    
+}
+
+.card:hover .card-icon{
+    background: none;
+    color:blue;
+    transform: scale(1.6);
+}
+
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    
+}
+
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    } 
+
+}
