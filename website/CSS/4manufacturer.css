@@ -141,14 +141,8 @@ h1.b{
   padding: 20px;
   
 }
-.buttn:first-child:hover{
-  background: white;
-  background-size: 400%;
-}
-.buttn:last-child:hover{
-  background: white;
-  background-size: 400%;
-}
+
+
 .buttn:first-child:before,
 .buttn:last-child:before{
   content: '';
